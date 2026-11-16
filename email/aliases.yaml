@@ -1,1 +1,34 @@
+version: 1
 
+organizations:
+  gwasai:
+    github_org: gwasai
+    domain: gwasai.com
+    provider: google_workspace
+
+    aliases:
+      github:
+        address: github@gwasai.com
+        destination: engineering
+        github_field: contact_email
+
+      billing:
+        address: billing@gwasai.com
+        destination: finance
+        github_field: billing_email
+
+      support:
+        address: support@gwasai.com
+        destination: support
+        public: true
+
+      security:
+        address: security@gwasai.com
+        destination: security
+        public: true
+
+      admin:
+        address: admin@gwasai.com
+        destination: administration
+
+    status: planned
